@@ -24,8 +24,6 @@ It processes **stereo image pairs from folders**, computes depth using StereoSGB
 
 ---
 
----
-
 ## 🔧 Requirements
 
 - **ROS2 Humble**
