@@ -24,19 +24,6 @@ It processes **stereo image pairs from folders**, computes depth using StereoSGB
 
 ---
 
-## 📁 Repository Structure
-
-```
-
-vslam/
-├── src/
-│   └── main.cpp          # Stereo VO node
-├── CMakeLists.txt
-├── package.xml
-└── README.md
-
-````
-
 ---
 
 ## 🔧 Requirements
@@ -131,9 +118,9 @@ map
 * Compute disparity using **StereoSGBM**
 * Convert disparity ( d ) → depth ( Z ):
 
-[
-Z = \frac{f \cdot b}{d}
-]
+
+    Z = f* b/d
+
 
 ### 2. Feature Extraction & Matching
 
@@ -146,17 +133,11 @@ Z = \frac{f \cdot b}{d}
 * Map matched keypoints in frame *t+1* as 2D image points
 * Solve camera motion using:
 
-[
-\text{solvePnP + RANSAC}
-]
+    solvePnP + RANSAC
 
 ### 4. Pose Accumulation
 
 The incremental transform is inverted and multiplied:
-
-[
-T_{world} = T_{world} \cdot T^{-1}_{t \rightarrow t+1}
-]
 
 ---
 
