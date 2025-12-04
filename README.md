@@ -149,7 +149,7 @@ The incremental transform is inverted and multiplied:
   * Static scenes
 
 ---
-![Plot](images/Screenshot%20from%202025-11-23%2023-22-33.png)
+![Plot](images/plot.png)
 
 ## 📌 Future Improvements
 
@@ -162,3 +162,6 @@ The incremental transform is inverted and multiplied:
 
 
 
+
+
+[def]: images/Screenshot%20from%202025-11-23%2023-22-33.png
